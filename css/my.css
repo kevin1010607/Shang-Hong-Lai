@@ -155,131 +155,182 @@ ul.nostyle i {
     }
 }
 
-/********** Title **********/
-#cvlab_logo {
+/* Responsive Web Design */
+/********** Logo **********/
+#main-nav.navbar-default .navbar-header > .navbar-brand > img {
     width: 60px;
 }
-#title {
-    margin-top: 18px;
+#main-nav.navbar-default .navbar-header > .navbar-brand > strong {
+    padding-left: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-size: 24px;
-    display:inline-block;
+    display: block;
 }
-
 /********** Header **********/
 #main-nav.navbar-default {
     background: #FFFFFF;
-}
-#main-nav.navbar-default .navbar-nav > li.active > a, 
-#main-nav.navbar-default .navbar-nav > li.open > a, 
-#main-nav.navbar-default .navbar-nav > li:hover > a {
-    background: rgb(249, 105, 14);
-    color: #FFFFFF;
-}
-.navbar.navbar-default {
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
+    -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.26);
 }
-.navbar.navbar-default .navbar-toggle {
-    margin-top: 20px;
+#main-nav.navbar-default .navbar-nav > li > a {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #0E0E0E;
+}
+#main-nav.navbar-default .navbar-nav > li.active > a,
+#main-nav.navbar-default .navbar-nav > li.open > a,
+#main-nav.navbar-default .navbar-nav > li:hover > a {
+    color: rgb(128, 0, 128);
+    background: transparent; 
 }
 .navbar.navbar-default .navbar-brand {
     height: auto;
-    padding: 10px 15px 5px;
 }
-.navbar-default .navbar-nav > li > a:hover, 
-.navbar-default .navbar-nav > li > a:focus {
-    color: #F8680D;
-    background: transparent;
-}
-.navbar-default .navbar-nav > li > a {
-    color: #020202;
-} 
-#main-nav.navbar-default {
-    background: #FFF;
-}
-.navbar-nav>li {
-}
-
-@media only screen and (min-width: 768px) {
-    #main-nav.navbar-default { 
-        -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
-        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.26);
-    }
-    #main-nav.navbar-default .navbar-nav > li > a {
-        padding-top: 30px;
-        padding-bottom: 24px;
-        border-bottom: 4px solid transparent;
-    }
-    .navbar-default .navbar-nav > li > a {
-	    color: #0E0E0E;
-	}
-    #main-nav.navbar-default .navbar-nav > li.active > a,
-    #main-nav.navbar-default .navbar-nav > li.open > a,
-    #main-nav.navbar-default .navbar-nav > li:hover > a {
-        background: transparent; 
-        color: #F9690E;
-    }
-    #main-nav.navbar-default .dropdown-menu {
-        padding: 0 20px;
-        min-width: 220px;
-        background-color: rgba(26, 28, 40, 0.9);
-        border: 0;
-        border-radius: 0;
-        box-shadow: none;
-        -webkit-box-shadow: none;
-        background-clip: inherit;
-    }
-    #main-nav.navbar-default .dropdown-menu > li {
-        border-left: 3px solid transparent;
-        margin-left: -20px;
-        padding-left: 17px;
-        -webit-transition: border-color 400ms;
-        transition: border-color 400ms;
-    }
-    #main-nav.navbar-default .dropdown-menu > li > a { 
-        padding: 15px 0;
-        color:#A8A8A8; 
-    }
-    #main-nav.navbar-default .dropdown-menu > li:first-child > a {
-        border-top: 0;
-    }
-    #main-nav.navbar-default .dropdown-menu > li.active,
-    #main-nav.navbar-default .dropdown-menu > li.open,
-    #main-nav.navbar-default .dropdown-menu > li:hover {
-        border-left-color: #45aed6;
-    }
-    #main-nav.navbar-default .dropdown-menu > li.active > a,
-    #main-nav.navbar-default .dropdown-menu > li.open > a,
-    #main-nav.navbar-default .dropdown-menu > li:hover > a {
-        color: #45aed6;
-        background-color: transparent;
-    }
-}
-
 /********** Banner **********/
 #hero-banner {
     overflow: hidden;
-    height: 600px;
     background: url('../images/group.jpg');
-    background-size: 600px, 300px, cover;
-    color:#fff;
+    color: rgb(255, 255, 255);
+    height: 600px;
+    background-size: 420px, auto;
 }
-#hero-banner.item {
-    height: 558px;
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: cover;
+#hero-banner > .container {
+    padding-top: 190px;
 }
-#hero-banner.banner-inner {
+#hero-banner h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 40px;
+    text-align: left;
+}
+#hero-banner h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: left;  
+}
+#hero-banner img {
+    height: 300px;
+    border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+    /********** Banner **********/
+    #hero-banner {
+        height: 700px;
+        background-size: 360px, auto;
+    }
+    #hero-banner > .container {
+        padding-top: 300px;
+    }
+    #hero-banner h2 {
+        padding-top: 20px;
+        padding-bottom: 18px;
+        font-size: 38px;
+        text-align: left;
+    }
+    #hero-banner h3 {
+        font-size: 20px;
+        line-height: 35px; 
+        text-align: left;  
+    }
+    #hero-banner img {
+        height: 280px;
+    }
+}
+
+@media (max-width: 992px) {
+    /********** Banner **********/
+    #hero-banner {
+        height: 700px;
+        background-size: 300px, auto;
+    }
+    #hero-banner > .container {
+        padding-top: 300px;
+    }
+    #hero-banner h2 {
+        padding-top: 0px;
+        padding-bottom: 18px;
+        font-size: 38px;
+        text-align: left;
+    }
+    #hero-banner h3 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 20px;
+        line-height: 30px; 
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px){
+    /********** Header **********/
+    #main-nav.navbar-default .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #0E0E0E;
+    }
+    #main-nav.navbar-default .navbar-nav > li.active > a, 
+    #main-nav.navbar-default .navbar-nav > li.open > a, 
+    #main-nav.navbar-default .navbar-nav > li:hover > a {
+        color: rgb(128, 0, 128);
+        background: rgb(245, 245, 220);
+    }
+    .navbar.navbar-default .navbar-brand {
+        margin-right: -15px;
+        margin-bottom: 10px;
+        height: auto;
+    }
+    .navbar.navbar-default .navbar-toggle {
+        margin-top: 25px;
+    }
+    /********** Banner **********/
+    #hero-banner {
+        height: 670px;
+        background-size: 200px, auto;
+    }
+    #hero-banner > .container {
+        padding-top: 180px;
+    }
+    #hero-banner h2 {
+        padding-top: 0px;
+        padding-bottom: 18px;
+        font-size: 30px;
+        text-align: center;
+    }
+    #hero-banner h3 {
+        margin-top: 12px;
+        margin-bottom: 12px;
+        font-size: 16px;
+        line-height: 30px; 
+        text-align: center;
+    }
+    #hero-banner img {
+        height: 230px;
+        display: block;
+        margin: auto;
+    }
+}
+
+
+
+
+/********** Banner **********/
+
+/* #hero-banner.banner-inner {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     color: #000;
-}
-#hero-banner h2 {
+} */
+/* #hero-banner h2 {
     margin-top: 180px;
     font-size: 40px;
     line-height: 50px; 
@@ -325,30 +376,4 @@ ul.nostyle i {
 }
 #hero-banner.banner-inner .btn {
     margin-top: 10px;
-} 
-#hero-text {
-    padding: 50px 0;
-    border-top: 1px solid #FFFFFF;
-}
-#hero-text h2 {
-    margin-top: 0;
-}
-#hero-text .btn {
-    margin-top: 40px;
-}
-#cta2 {
-    background: #45b1da;
-    color: #fff;
-    padding-top: 70px;
-}
-#cta2 .btn {
-    margin-top: 10px;
-}
-#cta2 h2 {
-    color: #fff;
-    font-size: 44px;
-    line-height: 1;
-}
-#cta2 h2 > span {
-    color: #45aed6;
-}
+}  */
