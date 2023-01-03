@@ -1,10 +1,354 @@
-#cvlab_logo {
-    width: 60px;
-    vertical-align: middle;
+/********** Typography **********/
+body {
+    padding-top: 100px;
+    background: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #282828;
+    line-height: 26px;
+    padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+}
+a {
+    color: #45aed6;
+    -webkit-transition: color 400ms, background-color 400ms;
+    -moz-transition: color 400ms, background-color 400ms;
+    -o-transition: color 400ms, background-color 400ms;
+    transition: color 400ms, background-color 400ms;
+}
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #2a95be;
+}
+hr {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #fff;
+}
+.gradiant {
+    background-image: -moz-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
+    background-image: -webkit-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
+    background-image: -ms-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
+}
+.gradiant-horizontal {
+    background-image: -moz-linear-gradient(4deg, #2caab3 0%, #2c8cb3 100%);
+    background-image: -webkit-linear-gradient(4deg, #2caab3 0%, #2c8cb3 100%);
+    background-image: -ms-linear-gradient(4deg, #2caab3 0%, #2c8cb3 100%);
+}
+.section-header {
+    margin-bottom: 50px;
+}
+.section-header p{
+    text-align:center;
+}
+.section-header .section-title {
+    font-size: 44px;
+    color: #F9690E;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 0 20px;  
+    display: block;
+    text-align: center;
+}
+.section-header .section-title:before {
+    content: "";
+    position: absolute;
+    width: 140px;
+    bottom: -5px;
+    right: 0;
+    width: 30px;
+    background: rgb(249, 105, 14);
+    border-radius: 50%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    height: 10px;
+}
+.btn {
+    border-width: 0;
+    border-radius: 0;
+}
+.btn.btn-primary {
+    background: #CD4F00;
+}
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+    background: #FF8A41;
+}
+.listarrow {
+    padding:0px;
+}
+.listarrow li {
+    list-style:none;
+    margin:0px;
+    padding:0px;
+}
+.listarrow li i {
+    padding-right:15px;
+    color: #F9690E;
+}
+.column-title {
+    margin-top: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+    position: relative;
+    color: #fff;
+}
+.column-title:after {
+    content: " ";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 40%; 
+}
+ul.nostyle {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+ul.nostyle i {
+    color: #45aed6;
+}
+.scaleIn {
+    -webkit-animation-name: scaleIn;
+    animation-name: scaleIn;
+}
+.navbar-toggle {
+    border-radius: 0;
+}
+.navbar-nav>li>a {
+    text-transform: uppercase;
+}
+@-webkit-keyframes scaleIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@keyframes scaleIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
 }
 
+/********** Title **********/
+#cvlab_logo {
+    width: 60px;
+}
 #title {
-    padding-top: 20px;
+    margin-top: 18px;
     font-size: 24px;
     display:inline-block;
+}
+
+/********** Header **********/
+#main-nav.navbar-default {
+    background: #FFFFFF;
+}
+#main-nav.navbar-default .navbar-nav > li.active > a, 
+#main-nav.navbar-default .navbar-nav > li.open > a, 
+#main-nav.navbar-default .navbar-nav > li:hover > a {
+    background: rgb(249, 105, 14);
+    color: #FFFFFF;
+}
+.navbar.navbar-default {
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+.navbar.navbar-default .navbar-toggle {
+    margin-top: 20px;
+}
+.navbar.navbar-default .navbar-brand {
+    height: auto;
+    padding: 10px 15px 5px;
+}
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus {
+    color: #F8680D;
+    background: transparent;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #020202;
+} 
+#main-nav.navbar-default {
+    background: #FFF;
+}
+.navbar-nav>li {
+}
+
+@media only screen and (min-width: 768px) {
+    #main-nav.navbar-default { 
+        -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.26);
+    }
+    #main-nav.navbar-default .navbar-nav > li > a {
+        padding-top: 30px;
+        padding-bottom: 24px;
+        border-bottom: 4px solid transparent;
+    }
+    .navbar-default .navbar-nav > li > a {
+	    color: #0E0E0E;
+	}
+    #main-nav.navbar-default .navbar-nav > li.active > a,
+    #main-nav.navbar-default .navbar-nav > li.open > a,
+    #main-nav.navbar-default .navbar-nav > li:hover > a {
+        background: transparent; 
+        color: #F9690E;
+    }
+    #main-nav.navbar-default .dropdown-menu {
+        padding: 0 20px;
+        min-width: 220px;
+        background-color: rgba(26, 28, 40, 0.9);
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        background-clip: inherit;
+    }
+    #main-nav.navbar-default .dropdown-menu > li {
+        border-left: 3px solid transparent;
+        margin-left: -20px;
+        padding-left: 17px;
+        -webit-transition: border-color 400ms;
+        transition: border-color 400ms;
+    }
+    #main-nav.navbar-default .dropdown-menu > li > a { 
+        padding: 15px 0;
+        color:#A8A8A8; 
+    }
+    #main-nav.navbar-default .dropdown-menu > li:first-child > a {
+        border-top: 0;
+    }
+    #main-nav.navbar-default .dropdown-menu > li.active,
+    #main-nav.navbar-default .dropdown-menu > li.open,
+    #main-nav.navbar-default .dropdown-menu > li:hover {
+        border-left-color: #45aed6;
+    }
+    #main-nav.navbar-default .dropdown-menu > li.active > a,
+    #main-nav.navbar-default .dropdown-menu > li.open > a,
+    #main-nav.navbar-default .dropdown-menu > li:hover > a {
+        color: #45aed6;
+        background-color: transparent;
+    }
+}
+
+/********** Banner **********/
+#hero-banner {
+    overflow: hidden;
+    height: 600px;
+    background: url('../images/group.jpg');
+    background-size: 600px, 300px, cover;
+    color:#fff;
+}
+#hero-banner.item {
+    height: 558px;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+#hero-banner.banner-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #000;
+}
+#hero-banner h2 {
+    margin-top: 180px;
+    font-size: 40px;
+    line-height: 50px; 
+    text-align: left;
+}
+#hero-banner h3 {
+    font-size: 24px;
+    line-height: 30px; 
+    text-align: left;  
+}
+#hero-banner img {
+    height: 300px;
+    margin-top: 200px;
+    display: block;
+    border-radius: 10px;
+}
+#hero-banner p { 
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    line-height: 35px;
+    text-align: left;
+}
+#hero-banner a {
+    width: 150px;
+    margin: 0;
+    display: block;
+    background: transparent;
+    border: 2px solid #fff;
+    float: left;
+}
+#hero-banner a:hover {
+    text-align: center;
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+    background: #F9690E;
+    border: 2px solid #F9690E;
+    color: #FFF;
+}
+#hero-banner.banner-inner h2 > span {
+    color: #45aed6;
+}
+#hero-banner.banner-inner .btn {
+    margin-top: 10px;
+} 
+#hero-text {
+    padding: 50px 0;
+    border-top: 1px solid #FFFFFF;
+}
+#hero-text h2 {
+    margin-top: 0;
+}
+#hero-text .btn {
+    margin-top: 40px;
+}
+#cta2 {
+    background: #45b1da;
+    color: #fff;
+    padding-top: 70px;
+}
+#cta2 .btn {
+    margin-top: 10px;
+}
+#cta2 h2 {
+    color: #fff;
+    font-size: 44px;
+    line-height: 1;
+}
+#cta2 h2 > span {
+    color: #45aed6;
 }
