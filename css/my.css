@@ -158,7 +158,7 @@ ul.nostyle i {
 /* Responsive Web Design */
 /********** Logo **********/
 #main-nav.navbar-default .navbar-header > .navbar-brand > img {
-    width: 60px;
+    width: 50px;
 }
 #main-nav.navbar-default .navbar-header > .navbar-brand > strong {
     padding-left: 0px;
@@ -177,98 +177,129 @@ ul.nostyle i {
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.26);
 }
 #main-nav.navbar-default .navbar-nav > li > a {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
     color: #0E0E0E;
 }
 #main-nav.navbar-default .navbar-nav > li.active > a,
 #main-nav.navbar-default .navbar-nav > li.open > a,
 #main-nav.navbar-default .navbar-nav > li:hover > a {
-    color: rgb(128, 0, 128);
+    color: rgb(51,   64, 159);
+    /* color: #4D6E8E; */
     background: transparent; 
 }
 .navbar.navbar-default .navbar-brand {
     height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 /********** Banner **********/
-#hero-banner {
+#banner {
     overflow: hidden;
     background: url('../images/group.jpg');
     color: rgb(255, 255, 255);
     height: 600px;
-    background-size: 420px, auto;
+    background-size: 420px;
 }
-#hero-banner > .container {
+#banner > .container {
     padding-top: 190px;
 }
-#hero-banner h2 {
+#banner h2 {
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 40px;
     text-align: left;
 }
-#hero-banner h3 {
+#banner h3 {
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 22px;
     line-height: 40px;
     text-align: left;  
 }
-#hero-banner img {
+#banner img {
     height: 300px;
     border-radius: 10px;
+}
+.block {
+    padding-top: 60px;
+}
+.block > .container {
+    background: #F5F5F5;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.26);
+}
+/********** Footer **********/
+#footer {
+    background: #4D6E8E;
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* height: 92px; */
+}
+#footer p {
+    margin-bottom: 0px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    text-align: center;
 }
 
 @media (max-width: 1200px) {
     /********** Banner **********/
-    #hero-banner {
-        height: 700px;
+    #banner {
         background-size: 360px, auto;
     }
-    #hero-banner > .container {
-        padding-top: 300px;
-    }
-    #hero-banner h2 {
+    #banner h2 {
         padding-top: 20px;
         padding-bottom: 18px;
         font-size: 38px;
-        text-align: left;
     }
-    #hero-banner h3 {
+    #banner h3 {
         font-size: 20px;
         line-height: 35px; 
-        text-align: left;  
     }
-    #hero-banner img {
+    #banner img {
         height: 280px;
     }
 }
 
 @media (max-width: 992px) {
+    /********** Logo **********/
+    #main-nav.navbar-default .navbar-header > .navbar-brand > strong {
+        display: none;
+    }
     /********** Banner **********/
-    #hero-banner {
-        height: 700px;
+    #banner {
         background-size: 300px, auto;
     }
-    #hero-banner > .container {
-        padding-top: 300px;
-    }
-    #hero-banner h2 {
+    #banner h2 {
         padding-top: 0px;
-        padding-bottom: 18px;
-        font-size: 38px;
-        text-align: left;
+        padding-bottom: 10px;
+        font-size: 34px;
     }
-    #hero-banner h3 {
+    #banner h3 {
         margin-top: 15px;
         margin-bottom: 15px;
-        font-size: 20px;
-        line-height: 30px; 
-        text-align: left;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    #banner img {
+        height: 240px;
     }
 }
 
 @media (max-width: 768px){
+    /********** Logo **********/
+    #main-nav.navbar-default .navbar-header > .navbar-brand > strong {
+        display: block;
+    }
     /********** Header **********/
     #main-nav.navbar-default .navbar-nav > li > a {
         padding-top: 10px;
@@ -278,102 +309,40 @@ ul.nostyle i {
     #main-nav.navbar-default .navbar-nav > li.active > a, 
     #main-nav.navbar-default .navbar-nav > li.open > a, 
     #main-nav.navbar-default .navbar-nav > li:hover > a {
-        color: rgb(128, 0, 128);
-        background: rgb(245, 245, 220);
+        background: rgba(112, 128, 144, 0.8);
+        color:rgb(255, 255, 255);
     }
     .navbar.navbar-default .navbar-brand {
         margin-right: -15px;
-        margin-bottom: 10px;
         height: auto;
     }
     .navbar.navbar-default .navbar-toggle {
         margin-top: 25px;
     }
     /********** Banner **********/
-    #hero-banner {
+    #banner {
         height: 670px;
         background-size: 200px, auto;
     }
-    #hero-banner > .container {
-        padding-top: 180px;
+    #banner > .container {
+        padding-top: 170px;
     }
-    #hero-banner h2 {
+    #banner h2 {
         padding-top: 0px;
         padding-bottom: 18px;
         font-size: 30px;
         text-align: center;
     }
-    #hero-banner h3 {
+    #banner h3 {
         margin-top: 12px;
         margin-bottom: 12px;
         font-size: 16px;
         line-height: 30px; 
         text-align: center;
     }
-    #hero-banner img {
+    #banner img {
         height: 230px;
         display: block;
         margin: auto;
     }
 }
-
-
-
-
-/********** Banner **********/
-
-/* #hero-banner.banner-inner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    color: #000;
-} */
-/* #hero-banner h2 {
-    margin-top: 180px;
-    font-size: 40px;
-    line-height: 50px; 
-    text-align: left;
-}
-#hero-banner h3 {
-    font-size: 24px;
-    line-height: 30px; 
-    text-align: left;  
-}
-#hero-banner img {
-    height: 300px;
-    margin-top: 200px;
-    display: block;
-    border-radius: 10px;
-}
-#hero-banner p { 
-    font-size: 20px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    line-height: 35px;
-    text-align: left;
-}
-#hero-banner a {
-    width: 150px;
-    margin: 0;
-    display: block;
-    background: transparent;
-    border: 2px solid #fff;
-    float: left;
-}
-#hero-banner a:hover {
-    text-align: center;
-    width: 150px;
-    margin: 0 auto;
-    display: block;
-    background: #F9690E;
-    border: 2px solid #F9690E;
-    color: #FFF;
-}
-#hero-banner.banner-inner h2 > span {
-    color: #45aed6;
-}
-#hero-banner.banner-inner .btn {
-    margin-top: 10px;
-}  */
