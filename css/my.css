@@ -246,7 +246,7 @@ ul.nostyle i {
     margin-bottom: 40px;
     text-align: center;
 }
-.block > .container > ul > li {
+.block > .container li {
     margin-top: 14px;
     margin-bottom: 14px;
     font-size: 20px;
@@ -302,6 +302,12 @@ ul.nostyle i {
     #banner img {
         height: 280px;
     }
+    .block > .container > h2 {
+        font-size: 30px;
+    }
+    .block > .container li {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -326,6 +332,12 @@ ul.nostyle i {
     }
     #banner img {
         height: 240px;
+    }
+    .block > .container > h2 {
+        font-size: 28px;
+    }
+    .block > .container li {
+        font-size: 16px;
     }
 }
 
@@ -378,5 +390,15 @@ ul.nostyle i {
         height: 230px;
         display: block;
         margin: auto;
+    }
+    .block > .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .block > .container > h2 {
+        font-size: 28px;
+    }
+    .block > .container li {
+        font-size: 16px;
     }
 }
