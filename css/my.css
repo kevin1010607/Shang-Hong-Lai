@@ -1,7 +1,7 @@
 /********** Typography **********/
 body {
     padding-top: 100px;
-    background: #fff;
+    background: url('../images/white.jpg');
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     color: #282828;
@@ -225,21 +225,53 @@ ul.nostyle i {
 }
 .block {
     padding-top: 60px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .block > .container {
     background: #F5F5F5;
+    color: #4F4F4F;
     margin-top: 30px;
     margin-bottom: 10px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
     border-radius: 8px;
     -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.26);
 }
+.block > .container > h2 {
+    font-size: 34px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.block > .container > ul > li {
+    margin-top: 14px;
+    margin-bottom: 14px;
+    font-size: 20px;
+}
+#research img {
+    max-width: 80%;
+    max-height: 80%;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+}
+#research h4 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 60px;
+}
+#research .text-container {
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 /********** Footer **********/
 #footer {
     background: #4D6E8E;
-    margin-top: 50px;
+    margin-top: 80px;
     padding-top: 30px;
     padding-bottom: 30px;
     /* height: 92px; */
@@ -247,7 +279,7 @@ ul.nostyle i {
 #footer p {
     margin-bottom: 0px;
     color: rgba(255, 255, 255, 0.8);
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
 }
 
