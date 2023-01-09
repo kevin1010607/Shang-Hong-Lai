@@ -257,6 +257,8 @@ ul.nostyle i {
     display: block;
     margin: auto;
     border-radius: 8px;
+    border-width: 5px;
+    border-style: solid;
 }
 #research h4 {
     text-align: center;
