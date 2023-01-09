@@ -258,10 +258,12 @@ ul.nostyle i {
     flex-direction: column;
 }
 .tab-all-links {
-    width: 100%;
+    overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
 }
 .tab-all-contents {
-    width: 100%;
+
 }
 .tab-link {
     background-color: inherit;
