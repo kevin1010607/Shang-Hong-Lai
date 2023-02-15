@@ -252,6 +252,11 @@ ul.nostyle i {
     margin-bottom: 14px;
     font-size: 20px;
 }
+.block > .container li > p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 0px;
+}
 /********** Tab **********/
 .tab {
     display: flex;
@@ -350,6 +355,9 @@ ul.nostyle i {
     .block > .container li {
         font-size: 18px;
     }
+    .block > .container li > p {
+        font-size: 14px;
+    }
     /********** Tab **********/
     .tab-link {
         font-size: 18px;
@@ -385,6 +393,9 @@ ul.nostyle i {
     }
     .block > .container li {
         font-size: 16px;
+    }
+    .block > .container li > p {
+        font-size: 12px;
     }
     /********** Tab **********/
     .tab-link {
@@ -453,6 +464,9 @@ ul.nostyle i {
     }
     .block > .container li {
         font-size: 16px;
+    }
+    .block > .container li > p {
+        font-size: 12px;
     }
     /********** Tab **********/
     .tab-link {
