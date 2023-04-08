@@ -32,6 +32,23 @@ a:focus {
 hr {
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #fff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid black;
+}
+th {
+    background-color: #cccccc;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
 .gradiant {
     background-image: -moz-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
