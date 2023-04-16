@@ -249,9 +249,12 @@ ul.nostyle i {
 }
 .block > .container {
     background: #F5F5F5;
+    width: auto;
     color: #4F4F4F;
     margin-top: 30px;
     margin-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
     padding-top: 30px;
     padding-bottom: 60px;
     padding-left: 60px;
@@ -314,6 +317,39 @@ ul.nostyle i {
 .tab-content.active {
     display: block;
 }
+/********** Experience **********/
+#experiences .e-container {
+    margin: 50px 80px;
+}
+#experiences .e-container > div {
+    margin: 10px 0px;
+}
+#experiences .e-container > hr {
+    border: 1px solid #000;
+    border-bottom: 1px solid #fff;
+    margin: 0px;
+}
+#experiences .e-year {
+    float: right;
+    width: 130px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 10px;
+}
+#experiences .e-title {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+#experiences .e-description {
+    display: block;
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
 /********** Research **********/
 #research img {
     max-width: 80%;
@@ -367,6 +403,11 @@ ul.nostyle i {
         height: 280px;
     }
     /********** Block & Container **********/
+    .block > .container {
+        width: auto;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
     .block > .container > h2 {
         font-size: 30px;
     }
@@ -379,6 +420,19 @@ ul.nostyle i {
     /********** Tab **********/
     .tab-link {
         font-size: 18px;
+    }
+    /********** Experience **********/
+    #experiences .e-container {
+        margin: 50px 70px;
+    }
+    #experiences .e-year {
+        font-size: 17px;
+    }
+    #experiences .e-title {
+        font-size: 20px;
+    }
+    #experiences .e-description {
+        font-size: 15px;
     }
 }
 
@@ -406,6 +460,11 @@ ul.nostyle i {
         height: 240px;
     }
     /********** Block & Container **********/
+    .block > .container {
+        width: auto;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
     .block > .container > h2 {
         font-size: 28px;
     }
@@ -419,6 +478,19 @@ ul.nostyle i {
     .tab-link {
         font-size: 16px;
         padding: 12px 14px;
+    }
+    /********** Experience **********/
+    #experiences .e-container {
+        margin: 50px 60px;
+    }
+    #experiences .e-year {
+        font-size: 16px;
+    }
+    #experiences .e-title {
+        font-size: 19px;
+    }
+    #experiences .e-description {
+        font-size: 14px;
     }
 }
 
@@ -476,6 +548,9 @@ ul.nostyle i {
     .block > .container {
         padding-left: 20px;
         padding-right: 20px;
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     .block > .container > h2 {
         font-size: 28px;
@@ -493,5 +568,19 @@ ul.nostyle i {
     }
     .tab-content {
         padding: 4px 8px;
+    }
+    /********** Experience **********/
+    #experiences .e-container {
+        margin: 50px 50px;
+    }
+    #experiences .e-year {
+        font-size: 16px;
+    }
+    #experiences .e-title {
+        font-size: 18px;
+    }
+    #experiences .e-description {
+        display: inline-block;
+        font-size: 14px;
     }
 }
