@@ -323,7 +323,7 @@ ul.nostyle i {
 /********** Table **********/
 .rg-container {
     font-family: 'Lato', Helvetica, Arial, sans-serif;
-    font-size: 17px;
+    font-size: 18px;
     padding-top: 20px;
 }
 table.rg-table {
@@ -364,7 +364,7 @@ table.rg-table th {
 }
 table.rg-table td {
     text-align: center;
-    padding: 0.35em;
+    padding: 10px 0px;
     font-size: 0.9em;
 }
 table.rg-table .highlight td {
@@ -375,11 +375,12 @@ table.rg-table th.number, td.number {
 }
 /********** Experience **********/
 #experiences .e-container {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
     margin: 50px 80px;
 }
 #experiences .e-container > div {
-    margin: 10px 0px;
-    padding-bottom: 8px;;
+    margin: 15px 0px;
+    padding: 10px 0px;
     border-bottom: 3px solid #ccc;
 }
 #experiences .e-container > hr {
@@ -389,7 +390,7 @@ table.rg-table th.number, td.number {
 }
 #experiences .e-year {
     float: right;
-    width: 130px;
+    width: 110px;
     font-weight: bold;
     font-size: 18px;
     color: #777;
@@ -400,6 +401,7 @@ table.rg-table th.number, td.number {
     font-weight: bold;
     font-size: 22px;
     margin-bottom: 10px;
+    margin-right: 10px;
     color: #333;
 }
 #experiences .e-description {
